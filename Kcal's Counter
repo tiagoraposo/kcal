@@ -1,0 +1,43 @@
+# kcal
+Kcal's needed a day
+
+
+idade = int(input("Insira a sua idade "))
+peso = int(input("Insira o seu peso "))
+altura = int(input("Insira a sua altura (em centímetros) "))
+
+formula = ((13.75*peso) + (5*altura) -(6.76*idade) + 66)
+
+#print (formula)
+
+print("Selecione o nível de atividade.")
+print("1. Sedentário")
+print("2. 1 a 3 dias")
+print("3. 3 a 6 dias")
+print("4. Todos os dias")
+
+choice = input("(1/2/3/4):")
+
+
+if choice == '1':
+   print ("Necessita de") 
+   print (formula * 1.2)
+   print ("Calorias diárias")
+
+elif choice == '2':
+   print ("Necessita de") 
+   print (formula * 1.375)
+   print ("Calorias diárias")
+
+elif choice == '3':
+   print ("Necessita de") 
+   print (formula *1.725)
+   print ("Calorias diárias")
+elif choice == '4':
+   print ("Necessita de")
+   print(formula *1.9)
+   print ("Calorias diárias")
+else:
+   print("Invalid input")
+
+print ("Deve acrescentar 500 calorias ao valor caso queira aumentar o peso e o inverso caso queira emagrecer")
